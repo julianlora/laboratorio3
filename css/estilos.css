@@ -341,7 +341,7 @@ footer{
 /* PAGINA DE PERSONAJE */
 
 .personaje-header{
-    background-image: url("imagenes/galeria/ilustraciones/1.jpg");
+    background-image: url("/imagenes/galeria/ilustraciones/1.jpg");
     background-position-x: right;
 }
 
