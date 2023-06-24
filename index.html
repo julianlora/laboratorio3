@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Space</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"></link>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navigationbar">
+            <div id="logo">
+                <a href="index.html"><img src="./imagenes/logo/logo2.png" alt="home" class="logoimg"></a>
+            </div>
+            <a onclick="myFunction()"><img class="icon" src="./imagenes/logo/responsive.png"></a>
+            <ul id="menu" class="">
+                <li class="menu-item">
+                    <div class="dropdown">
+                        <a href="episodios.html">Episodios</a>
+                        <div class="dropdown-content">
+                            <a href="episodios.html">Temporada 1</a>
+                            <a href="temporada2.html">Temporada 2</a>
+                            <a href="temporada3.html">Temporada 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item"><a href="personajes.html">Personajes</a></li>
+                <li class="menu-item"><a href="galeria.html">Galería</a></li>
+                <li class="menu-item"><a href="contacto.html"><nobr>Contacto</nobr></a></li>
+                <li class="menu-item"><a href="noticias.html">Noticias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="home-section">
+
+        <img class="poster" src="../imagenes/poster/poster5.jpg">
+
+        <article class="panels">
+            <div class="panel">
+                <a href="personajes.html">
+                    <img class="panelimg" src="./imagenes/galeria/personajes/3.jpg">
+                    <h2>PERSONAJES</h2>
+                </a>
+            </div>
+            <div class="panel">
+                <a href="galeria.html">
+                    <img class="panelimg" src="./imagenes/galeria/ilustraciones/1.jpg">
+                    <h2>GALERÍA</h2>
+                </a>
+            </div>
+            <div class="panel">
+                <a href="noticias.html">
+                    <img class="panelimg" src="./imagenes/galeria/ilustraciones/8.jpg">
+                    <h2>NOTICIAS</h2>
+                </a>
+            </div>
+        </article>
+
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="socials">
+                <li class="social-item">
+                    <a class="social-link" href="https://twitter.com/wbd/" target="_blank">
+                        <img src="./imagenes/logo/twitter.png">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="https://www.instagram.com/wbd/" target="_blank">
+                        <img src="./imagenes/logo/instagram.png">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="https://www.youtube.com/wbd" target="_blank">
+                        <img src="./imagenes/logo/youtube.png">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <img class="wbd-logo" src="./imagenes/logo/wbd.png">
+        <p class="footer-copyright">
+            © 2023 Warner Bros. Discovery, Inc
+        </p>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.className === "") {
+            x.className += "responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Space</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"></link>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <header class="personaje-header">
+        <nav id="navigationbar">
+            <div id="logo">
+                <a href="index.html"><img src="./imagenes/logo/logo2.png" alt="home" class="logoimg"></a>
+            </div>
+            <a onclick="myFunction()"><img class="icon" src="./imagenes/logo/responsive.png"></a>
+            <ul id="menu" class="">
+                <li class="menu-item">
+                    <div class="dropdown">
+                        <a href="episodios.html">Episodios</a>
+                        <div class="dropdown-content">
+                            <a href="episodios.html">Temporada 1</a>
+                            <a href="temporada2.html">Temporada 2</a>
+                            <a href="temporada3.html">Temporada 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item"><a href="personajes.html">Personajes</a></li>
+                <li class="menu-item"><a href="galeria.html">Galería</a></li>
+                <li class="menu-item"><a href="contacto.html"><nobr>Contacto</nobr></a></li>
+                <li class="menu-item"><a href="noticias.html">Noticias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bio-section">
+        <article class="bio-article">
+            <div class="profile">
+                <h1 class="nombre">Mooncake</h1>
+                <img class="profilepic" src="./imagenes/bio/mooncake.jpg">
+                <audio class="profileaudio" src="./audio/mooncake1.mp3" controls></audio>
+                <div class="datos">
+                    <p class="etiqueta"><b>Facción</b></p>
+                    <p class="descripcion">La resistencia</p>
+                    <p class="etiqueta"><b>Especie</b></p>
+                    <p class="descripcion">Alienígena</p>
+                    <p class="etiqueta"><b>Actor de voz</b></p>
+                    <p class="descripcion">Olan Rogers<br>
+                        <img class="voiceactor" src="./imagenes/actores/olan.jpg">
+                    </p>
+                    <p class="etiqueta subtitulo"><b>Relaciones</b></p>
+                    <p class="etiqueta"><b>Amistades</b></p>
+                    <p class="descripcion">
+                        <a href="gary.html">Gary GoodSpeed</a><br>
+                        <a href="avocado.html">Avocato</a><br>
+                        <a href="cato.html">Pequeño Cato</a><br>
+                        <a href="kvn.html">KVN</a><br>
+                        <a href="hue.html">H.U.E.</a>
+                    </p>
+                    <p class="etiqueta"><b>Enemigos</b></p>
+                    <p class="descripcion">
+                        <a href="comandante.html">Señor Comandante </a><br>
+                        Ash GravenInvictus
+                    </p>
+                    <p class="etiqueta subtitulo"><b>Otros</b></p>
+                    <p class="etiqueta"><b>Habilidades</b></p>
+                    <p class="descripcion">Volar<br>Alta capacidad de destrucción.<br>Da acceso al Final Space.</p>
+                </div>
+            </div>
+            <div class="info">
+                <p>
+                    <h2>Biografía</h2>
+                    <br>
+                    Mooncake es una especie de alíen descubierto por la tropa de Scarlet Lance cerca de una estrella en proceso de convertirse en una supernova. Su descubrimiento implicó la destrucción de su flota por el señor comandante, debido a que se rehusó a entregarle su descubrimiento al último.
+                    <br><br>
+                    Mooncake apareció en el Capítulo 1 de la serie. Gary inicialmente lo confunde con un pixel antes de que el propio Mooncake se estrellara en su casco espacial. Cuando Gary lo encuentra, lo llama Mooncake basado en el nombre de su oruga mascota dado por su padre John GoodSpeed. Durante el Capítulo 8, se muestra que Mooncake fue creado tras el cierre de la brecha que daba acceso al Final Space.
+                    <br><br>
+                    <h2>Personalidad</h2>
+                    <br>
+                    Mooncake es una criatura confiable pero se detesta por que puede ser usado como un arma para destruir planetas. Él es muy confiado hacia Gary, ya que es el primer individuo que conoce el cual no lo discrimina por lo que realmente es. También detesta al señor Comandante debido a los métodos que utiliza para capturarlo junto con ocasiones en los que se le ha enfrentado directamente.
+                    <br><br>
+                    <h2>Poderes y habilidades</h2>
+                    <br>
+                    Mooncake puede disparar un rayo verde desde su boca, el cual puede destruir todo a su paso, a excepción del Señor Comandante quién posee poderes de destrucción similares a él. Mooncake también puede levitar y volar a grandes velocidades en el espacio.    
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="socials">
+                <li class="social-item">
+                    <a class="social-link" href="https://twitter.com/wbd/" target="_blank">
+                        <img src="./imagenes/logo/twitter.png">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="https://www.instagram.com/wbd/" target="_blank">
+                        <img src="./imagenes/logo/instagram.png">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="https://www.youtube.com/wbd" target="_blank">
+                        <img src="./imagenes/logo/youtube.png">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <img class="wbd-logo" src="./imagenes/logo/wbd.png">
+        <p class="footer-copyright">
+            © 2023 Warner Bros. Discovery, Inc
+        </p>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.className === "") {
+            x.className += "responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+</body>
+</html>

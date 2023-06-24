@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Space</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"></link>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <header  class="personaje-header">
+        <nav id="navigationbar">
+            <div id="logo">
+                <a href="index.html"><img src="./imagenes/logo/logo2.png" alt="home" class="logoimg"></a>
+            </div>
+            <a onclick="myFunction()"><img class="icon" src="./imagenes/logo/responsive.png"></a>
+            <ul id="menu" class="">
+                <li class="menu-item">
+                    <div class="dropdown">
+                        <a href="episodios.html">Episodios</a>
+                        <div class="dropdown-content">
+                            <a href="episodios.html">Temporada 1</a>
+                            <a href="temporada2.html">Temporada 2</a>
+                            <a href="temporada3.html">Temporada 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item"><a href="personajes.html">Personajes</a></li>
+                <li class="menu-item"><a href="galeria.html">Galería</a></li>
+                <li class="menu-item"><a href="contacto.html"><nobr>Contacto</nobr></a></li>
+                <li class="menu-item"><a href="noticias.html">Noticias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bio-section">
+        <article class="bio-article">
+            <div class="profile">
+                <h1 class="nombre">H.U.E.</h1>
+                <img class="profilepic" src="./imagenes/bio/hue.jpg">
+                <audio class="profileaudio" src="./audio/hue1.mp3" controls></audio>
+                <div class="datos">
+                    <p class="etiqueta"><b>Facción</b></p>
+                    <p class="descripcion">Guardia Infinity (anteriormente)<br>La resistencia</p>
+                    <p class="etiqueta"><b>Ocupación</b></p>
+                    <p class="descripcion">Inteligencia artificial de la nave Galaxia 1<br>Inteligencia artificial de la nave Galaxia 2</p>
+                    <p class="etiqueta"><b>Especie</b></p>
+                    <p class="descripcion">Inteligencia Artificial</p>
+                    <p class="etiqueta"><b>Actor de voz</b></p>
+                    <p class="descripcion">Tom Kenny<br>
+                        <img class="voiceactor" src="./imagenes/actores/tomkenny.jpg">
+                    </p>
+                    <p class="etiqueta subtitulo"><b>Relaciones</b></p>
+                    <p class="etiqueta"><b>Amistades</b></p>
+                    <p class="descripcion">
+                        <a href="gary.html">Gary GoodSpeed </a><br>
+                        <a href="quinn.html">Quinn</a><br>
+                        <a href="avocado.html">Avocato</a><br>
+                        <a href="mooncake.html">Mooncake </a><br>
+                    </p>
+                    <p class="etiqueta"><b>Familia</b></p>
+                    <p class="descripcion">
+                        <a href="kvn.html">KVN </a>(robot asignado)<br>VArios androides
+                    </p>
+                    <p class="etiqueta"><b>Enemigos</b></p>
+                    <p class="descripcion">
+                        <a href="comandante.html">Señor Comandante </a>
+                    </p>
+                    <p class="etiqueta subtitulo"><b>Otros</b></p>
+                    <p class="etiqueta"><b>Habilidades</b></p>
+                    <p class="descripcion">Control total de la nave<br>Inteligencia</p>
+                </div>
+            </div>
+            <div class="info">
+                <p>
+                    <h2>Biografía</h2>
+                    <br>
+                    Heuristic Unified Entity (H.U.E. para abreviar) es un personaje terciario de la serie Final Space. Es la inteligencia artificial de la nave Galaxia Uno, el cual actúa como la voz de la razón y guardia para Gary cuando estuvo bajo encarcelamiento. Si bien ha mostrado ser inteligente, Gary al ser impulsivo rara vez escucha sus sugerencias. Dados los hechos de Capíactualment H.U.E actualmente reside en el traje espacial de Gary. En la segunda temporada H.U.O residió en un robot .
+                    <br><br>
+                    <h2>Personalidad</h2>
+                    <br>
+                    H.U.E esta inspirado en la inteligencia Hal 9000 de la franquicia 2001: A Space Odyssey. Sin embargo a diferencia de la última, esta no actuá de manera dañina hacia Gary. A menudo se le puede escuchar ofreciendo consejos, posibilidades de acción o simplemente charlando con Gary. Cuando Gary manifiesta conductas positivas, H.U.E suele recompensarle con una galleta.
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="socials">
+                <li class="social-item">
+                    <a class="social-link" href="https://twitter.com/wbd/" target="_blank">
+                        <img src="./imagenes/logo/twitter.png">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="https://www.instagram.com/wbd/" target="_blank">
+                        <img src="./imagenes/logo/instagram.png">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="https://www.youtube.com/wbd" target="_blank">
+                        <img src="./imagenes/logo/youtube.png">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <img class="wbd-logo" src="./imagenes/logo/wbd.png">
+        <p class="footer-copyright">
+            © 2023 Warner Bros. Discovery, Inc
+        </p>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.className === "") {
+            x.className += "responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+</body>
+</html>
