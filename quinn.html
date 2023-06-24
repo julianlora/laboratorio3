@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Space</title>
+    <link rel="stylesheet" type="text/css" href="/css/estilos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"></link>
+    <script type="module" src="/js/main.js"></script>
+</head>
+<body>
+    <header class="personaje-header">
+        <nav id="navigationbar">
+            <div id="logo">
+                <a href="index.html"><img src="/imagenes/logo/logo2.png" alt="home" class="logoimg"></a>
+            </div>
+            <a onclick="myFunction()"><img class="icon" src="/imagenes/logo/responsive.png"></a>
+            <ul id="menu" class="">
+                <li class="menu-item">
+                    <div class="dropdown">
+                        <a href="episodios.html">Episodios</a>
+                        <div class="dropdown-content">
+                            <a href="episodios.html">Temporada 1</a>
+                            <a href="temporada2.html">Temporada 2</a>
+                            <a href="temporada3.html">Temporada 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item"><a href="personajes.html">Personajes</a></li>
+                <li class="menu-item"><a href="galeria.html">Galería</a></li>
+                <li class="menu-item"><a href="contacto.html"><nobr>Contacto</nobr></a></li>
+                <li class="menu-item"><a href="noticias.html">Noticias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bio-section">
+        <article class="bio-article">
+            <div class="profile">
+                <h1 class="nombre">Quinn Airgone</h1>
+                <img class="profilepic" src="/imagenes/bio/quinn.jpg">
+                <audio class="profileaudio" src="/audio/quinn1.mp3" controls></audio>
+                <div class="datos">
+                    <p class="etiqueta"><b>Facción</b></p>
+                    <p class="descripcion">Guardia Infinity (anteriormente)<br>La resistencia</p>
+                    <p class="etiqueta"><b>Ocupación</b></p>
+                    <p class="descripcion">Criminal<br>Capitán (previamente)<br>Comandante</p>
+                    <p class="etiqueta"><b>Especie</b></p>
+                    <p class="descripcion">Humana</p>
+                    <p class="etiqueta"><b>Actor de voz</b></p>
+                    <p class="descripcion">Tika Sumpter<br>
+                        <img class="voiceactor" src="/imagenes/actores/tika.jpg">
+                    </p>
+                    <p class="etiqueta subtitulo"><b>Relaciones</b></p>
+                    <p class="etiqueta"><b>Amistades</b></p>
+                    <p class="descripcion">
+                        <a href="gary.html">Gary GoodSpeed </a>(interés amoroso)<br>
+                        <a href="mooncake.html">Mooncake </a><br>
+                        <a href="cato.html">Pequeño Cato </a><br>
+                        <a href="avocato.html">Avocato </a><br>
+                    </p>
+                    <p class="etiqueta"><b>Familia</b></p>
+                    <p class="descripcion">
+                        Madre<br>Avery Airgone (hermana fallecida)
+                    </p>
+                    <p class="etiqueta"><b>Enemigos</b></p>
+                    <p class="descripcion">
+                        <a href="comandante.html">Señor Comandante </a>
+                    </p>
+                    <p class="etiqueta subtitulo"><b>Otros</b></p>
+                    <p class="etiqueta"><b>Habilidades</b></p>
+                    <p class="descripcion">Ingeniera<br>Piloto<br>Combate mano a mano</p>
+                </div>
+            </div>
+            <div class="info">
+                <p>
+                    <h2>Biografía</h2>
+                    <br>
+                    Una chica aventurada que hace un terrible descubrimiento: una brecha en el espacio-tiempo. Cuando ninguno de sus colegas de la Guardia Infinity le hace caso, roba una nave espacial y decide investigar por su cuenta. Mientras era capturada por sus superiores, la nave y sus captores terminan siendo absorbidas por la anomalía que había descubierto y termina siendo rescatada por Gary GoodSpeed.
+                    <br><br>
+                    <h2>Personalidad</h2>
+                    <br>
+                    Quinn demuestra ser inteligente e independiente, pero subestimada. Toma su trabajo de cerrar la brecha muy seriamente e intenta todo para salvar el universo incluso si le cuesta el trabajo, su libertad o su vida.
+                    <br><br>
+                    Mientras la serie avanza, Quinn lentamente comienza a sentir afecto hacia Gary. Los factores que su relación avanzara fueron: la confesión de Nightfall (Su yo del futuro) hacia él, que viera sus videocintas relatándole su vida diaria mientras era un recluso y que Gary intentara sacrificarse para cerrar la brecha del Final Space. Su relación tuvo una breve caída cuando Gary decidió apoyar a Avocato en rescatar a su hijo, en vez de ayudarla con la brecha.
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="socials">
+                <li class="social-item">
+                    <a class="social-link" href="https://twitter.com/wbd/" target="_blank">
+                        <img src="/imagenes/logo/twitter.png">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="https://www.instagram.com/wbd/" target="_blank">
+                        <img src="/imagenes/logo/instagram.png">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link" href="https://www.youtube.com/wbd" target="_blank">
+                        <img src="/imagenes/logo/youtube.png">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <img class="wbd-logo" src="/imagenes/logo/wbd.png">
+        <p class="footer-copyright">
+            © 2023 Warner Bros. Discovery, Inc
+        </p>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.className === "") {
+            x.className += "responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+</body>
+</html>
