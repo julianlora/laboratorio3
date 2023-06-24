@@ -164,7 +164,7 @@ footer{
 /* EPISODIOS */
 
 .episodios-section{
-    background-image: url("./imagenes/galeria/ilustraciones/9.jpg");
+    background-image: url("../imagenes/galeria/ilustraciones/9.jpg");
     background-size: contain;
     padding-left: 15%;
     padding-right: 15%;
@@ -290,7 +290,7 @@ footer{
 }
 
 .personajes-section{
-    background-image: url("./imagenes/galeria/ilustraciones/7.jpg");
+    background-image: url("../imagenes/galeria/ilustraciones/7.jpg");
     background-size: contain;
     padding-left: 10%;
     padding-right: 10%;
@@ -341,7 +341,7 @@ footer{
 /* PAGINA DE PERSONAJE */
 
 .personaje-header{
-    background-image: url("./imagenes/galeria/ilustraciones/1.jpg");
+    background-image: url("../imagenes/galeria/ilustraciones/1.jpg");
     background-position-x: right;
 }
 
@@ -477,7 +477,7 @@ footer{
     padding-right: 15vw;
     padding-bottom: 2.5rem;
     padding-top: 2.5rem;
-    background-image: url("./imagenes/galeria/ilustraciones/8.jpg");
+    background-image: url("../imagenes/galeria/ilustraciones/8.jpg");
     background-size: cover;
 }
 
@@ -565,7 +565,7 @@ footer{
 }
 @media(max-width: 480px) {
 .contacto-section{
-    background-image: url("./imagenes/galeria/personajes/2.jpg");
+    background-image: url("../imagenes/galeria/personajes/2.jpg");
     background-size: cover;
     background-position-x: center;
 }
