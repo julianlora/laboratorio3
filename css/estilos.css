@@ -1,0 +1,575 @@
+* { margin:0; padding: 0;}
+
+@font-face {
+    font-family: myFont;
+    src: url(/Russo_One/RussoOne-Regular.ttf);
+}
+
+body{
+    background-color: #202124;
+    color:#e8eaed;
+    font-family: myFont;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* BARA DE NAVEGACIÓN */
+
+#navigationbar {
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoimg{
+    width: 14rem;
+}
+
+.icon{
+    display: none;
+}
+
+#menu{
+    display: flex;
+    
+}
+
+.menu-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size:1.2rem;
+}
+.menu-item a:hover{
+    color:#00A4BD;
+}
+
+/* HOME */
+
+.home-section h1, h2{
+    font-weight: normal;
+}
+
+.poster{
+    max-width: 100%;
+}
+
+.panels{
+    display: flex;
+    justify-content: center;
+}
+
+.panel{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+
+.panelimg{
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+}
+
+.panels h2{
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.socials img{
+    max-width: 1.5rem;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.wbd-logo{
+    max-width: 23em;
+    padding-bottom: 1.3em;
+}
+
+.footer-copyright{
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+@media (max-width: 780px){
+#navigationbar{
+    display: block;
+}
+#menu{
+    display: none;
+}
+.icon{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    max-width: 2rem;
+}
+#menu.responsive{
+    display:block;
+}
+#menu.responsive li{
+    display: block;
+	text-align: center;
+	padding: 0.5rem;
+}
+
+}
+
+@media (max-width: 480px){
+.panels{
+    display: block;
+    text-align: center;
+}
+.panelimg{
+    width: 80%;
+}
+.panels h2{
+    font-size: 1rem;
+}
+.wbd-logo{
+    width: 15rem;
+}
+.footer-copyright{
+    font-size: 0.6rem;
+}
+}
+
+/* EPISODIOS */
+
+.episodios-section{
+    background-image: url("/imagenes/galeria/ilustraciones/9.jpg");
+    background-size: contain;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+
+.episodios-section h1{
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.episodios-section h1{
+    font-weight: normal;
+}
+
+.episodios{
+    background-color: #202124;
+    padding: 25px;
+}
+
+.temporada{
+    position: relative;
+}
+
+.episodio{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.episodiosmenu{
+    display: flex;
+}
+
+.dropdown.dd-episodios{
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: max-content;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content a{
+    display: block;
+    color: white;
+    padding: 5px;
+}
+
+.dropdown-content a:hover{
+    color:#ffffff;
+    background-color: #00A4BD;
+}
+
+.trailer{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.trailer iframe{
+    width: 40vw;
+    height: 25vw;
+}
+
+.episodio{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+    max-height: 5rem;
+}
+
+.episodio:first-child{
+    border-top: 1px solid gray;
+}
+.descripcion{
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.titulo{
+    padding-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+.episodiosmenu{
+    font-size: 1rem;
+}
+.dropdown.dd-episodios{
+    font-size: 0.7rem;
+}
+.episodio{
+    display: block;
+    max-height: min-content;
+    text-align: center;
+}
+.episodio img{
+    height: 3rem;
+}
+.descripcion{
+    font-size: 0.8rem;
+    padding-left: 0px;
+}
+}
+/* PERSONAJES */
+
+.personajes{
+    display: grid;
+    column-gap: 8%;
+    row-gap: 8%;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 5%;
+}
+
+.personajes-section{
+    background-image: url("/imagenes/galeria/ilustraciones/7.jpg");
+    background-size: contain;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+
+.personajes-section h1{
+    text-align: center;
+    padding-top: 2%;
+    font-size: 2rem;
+}
+
+.personajes-section h1, h2{
+    font-weight: normal;
+}
+
+.personaje h2{
+    padding-top: 2%;
+}
+
+.personajepic{
+    border: 2px solid white;
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+.personaje:hover .personajepic{
+    opacity: 0;
+}
+
+.media{
+    border-radius: 25px;
+}
+@media(max-width:480px){
+.personajes{
+    grid-template-columns: repeat(2, 1fr);
+    height: 50rem;
+    row-gap: 5px;
+}
+.personajes-section h2{
+    font-size: 1rem;
+}
+.personajes-section h1{
+    font-size: 1.3rem;
+}
+}
+/* PAGINA DE PERSONAJE */
+
+.personaje-header{
+    background-image: url("imagenes/galeria/ilustraciones/1.jpg");
+    background-position-x: right;
+}
+
+.bio-section{
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 50px;
+    background-color: #202124;
+}
+
+.profile h1, h2, b{
+    font-weight: normal;
+}
+
+.info h2{
+    font-weight: bold;
+}
+
+.bio-section .info{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.bio-article{
+    padding-top: 50px;
+    display: flex;
+    background-color: #202124;
+}
+
+.profile{
+    border: 2px solid gray;
+    text-align: center;
+    padding: 20px;
+}
+
+.nombre{
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.profilepic{
+    border: 2px solid gray;
+    max-width: 15em;
+}
+
+.profileaudio{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.datos{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    text-align: left;
+    border:1px solid gray;
+    font-size: 0.85em;
+}
+
+.datos .etiqueta{
+    border-bottom: 1px solid gray;
+    padding:10px;
+}
+
+.datos .descripcion{
+    border-bottom: 1px solid gray;
+    padding:10px;
+}
+
+.datos .descripcion a{
+    color: #00A4BD;
+}
+
+.datos .subtitulo{
+    grid-column:span 2;
+    text-align: center;
+    background-color: #00A4BD;
+}
+
+.datos .voiceactor{
+    max-width: 10em;
+}
+
+.info{
+    padding-left: 30px;
+}
+
+/* GALERIA */
+
+.galeria-section h1{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: black;
+    font-weight: normal;
+}
+.galeria-section h2{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.set{
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+}
+.set a{
+    padding: 2%;
+}
+.set a img{
+    max-width: 100%;
+}
+
+@media (max-width:480px){
+.set{
+    grid-template-columns: repeat(2, 1fr);
+}
+.galeria-section h2{
+    text-align: center;
+    padding: 0px;
+}
+}
+
+/* NOTICIAS */
+
+.noticias-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+    background-image: url("/imagenes/galeria/ilustraciones/8.jpg");
+    background-size: cover;
+}
+
+.noticias-section .titulo-pagina{
+    text-align: center;
+    font-weight: normal;
+}
+
+.noticia{
+    display: flex;
+    padding: 1.2rem;
+    height: 13rem;
+    /* width: 100%; */
+    border: 2px solid gray;
+    background-color: black;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.noticia h2{
+    font-weight: bold;
+}
+
+.resumen{
+    position: relative;
+    padding-right: 50px;
+    overflow: hidden;
+}
+
+.fecha{
+    padding-bottom: 10px;
+    font-size: 0.85em;
+}
+
+.resumen h2{
+    padding-bottom: 20px;
+}
+
+.resumen a{
+    position: absolute;
+    bottom: 0px;
+    color:#00A4BD;
+}
+
+.noticiapic{
+    max-width: min-content;
+}
+
+@media(max-width: 480px) { 
+.noticia{
+    display: block;
+    height: min-content;
+}
+.resumen{
+    padding-right: 0px;
+    padding-bottom: 1rem;
+}
+.noticiapic{
+    max-width: 100%;
+}
+.resumen a{
+    top:-3px;
+    right: 0px;
+}
+}
+
+/* CONTACTO */
+.contacto-section h1{
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+.contacto-section article{
+    position:relative;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    z-index: 2;
+    max-width: 30%;
+}
+.contactobg{
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3;
+}
+@media(max-width: 480px) {
+.contacto-section{
+    background-image: url(/imagenes/galeria/personajes/2.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+.contactobg{
+    opacity: 0;
+}
+}
